@@ -6,7 +6,8 @@
         <script>
         // JS给OC发送消息
         function js2oc1() {
-            window.webkit.messageHandlers.noParamsFunction.postMessage('我是js方法传过来的数据');
+            //window.webkit.messageHandlers.noParamsFunction.postMessage('我是js方法传过来的数据');
+            window.webkit.messageHandlers['customEvent'].postMessage({event: "rolelogin", roleId: 2621441, roleid: 2621441, roleName: "花开苍穹", serverId: "1", serverid: "1"});
         }
         function js2oc2(x,y) {
             window.webkit.messageHandlers.haveParamsFunction.postMessage({name:x,age:y});

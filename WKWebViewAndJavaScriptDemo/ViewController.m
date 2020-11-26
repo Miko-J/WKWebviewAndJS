@@ -30,6 +30,7 @@
     // 注册JS消息，name必须JS发送消息时的名字对应
     [_userContentController addScriptMessageHandler:self name:@"noParamsFunction"];
     [_userContentController addScriptMessageHandler:self name:@"haveParamsFunction"];
+    [_userContentController addScriptMessageHandler:self name:@"customEvent"];
     
     WKWebViewConfiguration *_configuration = [[WKWebViewConfiguration alloc] init];
     _configuration.userContentController = _userContentController;
